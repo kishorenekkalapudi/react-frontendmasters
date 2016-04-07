@@ -6,7 +6,7 @@ var MyTitle = React.createClass({
 	render () {
 		return (
 			div(null,
-				h1(null, this.props.title)
+				h1({style: {color: this.props.color}}, this.props.title)
 			)
 		)
 	}
@@ -18,9 +18,9 @@ var ce = React.createElement
 
 var MyFirstComponent = (
   div(null,
-  	MyTitleFact({title: 'Props are great1'}),
-  	React.createElement(MyTitle, {title: 'Use props everywhere'}),
-  	ce(MyTitle, {title: 'Props are the best'})
+  	MyTitleFact({title: 'Props are great1', color: 'rebeccapurple'}),
+  	React.createElement(MyTitle, {title: 'Use props everywhere', color: 'mediumaquamarine'}),
+  	ce(MyTitle, {title: 'Props are the best', color: 'peru'})
     //refactor to React.createElement(MyTitle, null)
   )
 )
