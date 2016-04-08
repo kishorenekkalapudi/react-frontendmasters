@@ -1,11 +1,11 @@
 
 
-# for webpack to build
+# for webpack to build during setup
 webpack js/ClientApp.js public/bundle.js (put into script)
 
 ls -lsa public/bundle.js (to see size)
 
-# standard
+# standard during setup for error checking
 standard (to require in react)
 
 # test scripts
@@ -15,6 +15,13 @@ npm run build
 # http-server
 http-server ./
 
-# every time
+# every time to reload
 npm run build
+
+# keep webpack on (with standard in package.json)
+webpack --watch (but put this in package.json)
+now just do: 
+npm run watch
+
+
 
