@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "test": "mocha --require test/helpers/setup.js",
-    "lint": "eslint --ignore-path .gitignore --cache ./",
-    "cover": "nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test"
+    "build": "webpack js/ClientApp.js public/bundle.js",
+    "test": "standard"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +17,9 @@
     "react-dom": "^0.14.8",
     "react-redux": "^4.4.0",
     "react-router": "^2.0.0",
-    "redux": "^3.3.1"
+    "redux": "^3.3.1",
+    "standard": "^6.0.8",
+    "webpack": "^1.12.14"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
@@ -49,7 +48,7 @@
   "directories": {
     "test": "test"
   },
-    "keywords": [
+  "keywords": [
     "react",
     "workshop",
     "intro",
