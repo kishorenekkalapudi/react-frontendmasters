@@ -15,3 +15,6 @@ npm run build
 # http-server
 http-server ./
 
+# every time
+npm run build
+
