@@ -23,5 +23,8 @@ webpack --watch (but put this in package.json)
 now just do: 
 npm run watch
 
+# webpack must be running
+npm run watch
+
 
 
