@@ -11,7 +11,6 @@ const ShowCard = (props) => (
 	</div>
 )
 
-
 ShowCard.propTypes = {
   show: React.PropTypes.object.isRequired
 }
