@@ -36,7 +36,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return { 
-		searchTerm (searchTerm) {
+		searchTerm: (searchTerm) => {
 			dispatch({type: SET_SEARCH_TERM, value: searchTerm})
 		}
 	}
