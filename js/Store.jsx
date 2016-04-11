@@ -6,13 +6,7 @@ const initialState = {
 	searchTerm: ''
 }
 
-const rootReducer = (state=initialState, action) => {
-
-	// // default es6 replaced
-	// if (!state) { state = initialState }
-
-	// state = state || initialState
-
+const rootReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case SET_SEARCH_TERM: 
 			return reduceSearchTerm(state, action)
@@ -29,14 +23,12 @@ const reduceSearchTerm = (state, action) => {
 
 const store = redux.createStore(rootReducer)
 
-
 const mapStateToProps = (state) => {
-	return { searchTerm: state.searchTerm}
+	return { searchTerm: state.searchTerm }
 }
-
 const mapDispatchToProps = (dispatch) => {
 	return { 
-		searchTerm: (searchTerm) => {
+		setSearchTerm: (searchTerm) => {
 			dispatch({type: SET_SEARCH_TERM, value: searchTerm})
 		}
 	}

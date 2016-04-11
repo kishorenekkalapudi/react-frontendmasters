@@ -4,7 +4,7 @@ const { func, bool, string } = React.PropTypes
 const { connector } = require('./Store')
 const Header = React.createClass({
 	propTypes: {
-		handleSearchTermChange: func,
+		setSearchTerm: func,
 		showSearch: bool,
 		searchTerm: string
 	},
