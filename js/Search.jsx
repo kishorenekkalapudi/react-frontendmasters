@@ -16,8 +16,8 @@ const Search = React.createClass({
 				<div className='shows'>
 					{this.props.route.shows
 						.filter((show) => `${show.title} ${show.description}`.toUpperCase().indexOf(this.props.searchTerm.toUpperCase()) >= 0)
-						.map((show) => (
-						<ShowCard {...show} key={show.imdbID} />
+						.map((show, index) => (
+						<ShowCard {...show} key={index} />
 					))}
 				</div>
 			</div>
