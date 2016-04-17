@@ -12,7 +12,7 @@ standard (to require in react)
 npm run test
 npm run build
 
-# http-server
+# http-server to run app
 http-server ./
 
 # every time to reload

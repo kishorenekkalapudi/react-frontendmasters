@@ -8,18 +8,18 @@ const ShowCard = (props) => (
 			<div className='show-card-text'>
 				<h3 className='show-card-title'>{props.title}</h3>
 				<h4 className='show-card-year'>({props.year})</h4>
-				<p className='show-card-description'>{props.description}</p>
+				<img src={`public/img/posters/${props.rank}`} className='show-card-img' />
 			</div>
 		</div>
 	</Link>
 )
 
 const { string } = React.PropTypes
-// const string = React.PropTypes.string
+
 
 ShowCard.propTypes = {
   title: string.isRequired,
-  description: string.isRequired,
+  rank: string.isRequired,
   year: string.isRequired,
   poster: string.isRequired,
   imdbID: string.isRequired
