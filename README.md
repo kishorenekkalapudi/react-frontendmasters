@@ -60,5 +60,12 @@ npm run watch
 // });
 
 
+The state Senate passed legislation Thursday cracking down on a growing — but sometimes illegal — trend of campsites advertised as vacation rentals on online lodging services such as Airbnb. The websites allow people to list and book private housing, and some are touting luxury campsites with comfy pillows, mattresses and access to paradise for $40 to $100 a night.  With tag lines promising \"Luxury Glamping in Paradise!\" or a way to \"See Maui on a Budget,\" the ads feature campsites in state parks, in backyards or on beaches that are not necessarily legal. The popularity of \"glamping,\" or glamorous camping, has grown as more people seek luxury amenities in the outdoors.
+
+Pitching a tent on a beach that does not allow camping is illegal, and Hawaii bans reserving a space in a state park and reselling the camping permit, as does Honolulu with its county parks.
+
+\"Some of these campsites are not campsites. They're just beach areas,\" said state Sen. Laura Thielen, whose district on Oahu is featured in some of the ads. \"The challenge is: How do you crack down on that?\"
+
+The bill makes it harder for online lodging services to list campsites by requiring them to verify that the listings are legal before they are posted. It now goes back to the state House of Representatives.
 
 
