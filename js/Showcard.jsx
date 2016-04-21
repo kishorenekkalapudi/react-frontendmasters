@@ -13,13 +13,11 @@ const ShowCard = (props) => (
 		</div>
 	</Link>
 )
-
 const { string } = React.PropTypes
 
-
 ShowCard.propTypes = {
+	rank: string.isRequired,
   title: string.isRequired,
-  rank: string.isRequired,
   year: string.isRequired,
   poster: string.isRequired,
   imdbID: string.isRequired
