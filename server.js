@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
-}).listen(process.env.PORT || 5000);
+}).listen('port');
 
 // app.listen(process.env.PORT || 3000, 'localhost', function(err) {
 //   if (err) {
