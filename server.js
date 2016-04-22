@@ -6,7 +6,7 @@ var config = require('./webpack.config');
 var app = express();
 var compiler = webpack(config);
 
-app.set('port', (process.env.PORT || 5000));
+var port = process.env.PORT || 5000;
 
 // app.use(require('webpack-dev-middleware')(compiler, {
 //   noInfo: true,
@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
-}).listen('port');
+}).listen(port);
 
 // app.listen(process.env.PORT || 3000, 'localhost', function(err) {
 //   if (err) {
